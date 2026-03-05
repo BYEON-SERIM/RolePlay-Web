@@ -1,0 +1,10 @@
+/* Google Fonts에서 귀여운 'Gaegu' 폰트를 가져옵니다. */
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Gaegu', sans-serif;
+  background-color: #fafafa; /* 앱 바깥의 전체 배경색을 부드럽게 변경 */
+}

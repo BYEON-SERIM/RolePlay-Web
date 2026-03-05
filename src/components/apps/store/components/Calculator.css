@@ -1,0 +1,98 @@
+.calculator-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.calculator-modal {
+  background: #fdf6f8;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 380px;
+  font-family: 'Gaegu', sans-serif;
+}
+
+.calculator-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #E17E9A;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #FFB6C1;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+}
+
+.close-button:hover {
+  color: #E17E9A;
+  transform: none;
+  box-shadow: none;
+}
+
+.calculator-display {
+  background-color: #FFFACD;
+  color: #E17E9A;
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border: 2px solid #FFB6C1;
+  overflow-x: auto;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+}
+
+.calculator-keys button {
+  height: 100%;
+  min-height: 60px;
+  font-size: 1.5rem;
+  border-radius: 12px;
+}
+
+.key-operator {
+  background-color: #FFDAB9; /* 연한 복숭아색 */
+}
+
+.key-clear {
+  background-color: #FFB6C1; /* 연분홍 */
+  color: white;
+}
+
+.key-equal {
+  grid-row: span 2;
+  background-color: #E17E9A; /* 진한 분홍 */
+  color: white;
+}
+
+.key-plus {
+  grid-row: span 2;
+}
+
+.key-zero {
+  grid-column: span 2;
+}

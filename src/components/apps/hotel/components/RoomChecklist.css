@@ -1,0 +1,84 @@
+.room-checklist {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.checklist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 1rem;
+}
+
+.checklist-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #E17E9A;
+}
+
+.reset-btn {
+  background-color: #f0f0f0;
+  color: #666;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background-color: #e0e0e0;
+  transform: none;
+  box-shadow: none;
+}
+
+.checklist-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+  background-color: #FFFACD; /* 병아리색 */
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.checklist-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.checklist-item.checked {
+  background-color: #E0F7FA; /* 체크되면 연한 하늘색 */
+  opacity: 0.8;
+}
+
+.checklist-item.checked .item-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.check-box {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  min-width: 30px;
+}
+
+.item-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #555;
+}

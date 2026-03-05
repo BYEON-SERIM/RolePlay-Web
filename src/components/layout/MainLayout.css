@@ -1,0 +1,12 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: #4F4F4F; /* 어두운 회색 텍스트 */
+}
+
+.app-content {
+  flex-grow: 1; /* 남은 공간을 모두 채움 */
+  overflow-y: auto; /* 내용이 많아지면 스크롤 */
+  padding: 1rem; /* 콘텐츠 영역에 여백 추가 */
+}
