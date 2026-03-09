@@ -7,6 +7,7 @@ import MainMenu from './pages/MainMenu';
 import StorePlay from './components/apps/store/components/StorePlay.tsx';
 import HotelPlay from './components/apps/hotel/components/HotelPlay.tsx';
 import AcademyPlay from './components/apps/academy/components/AcademyPlay.tsx';
+import PianoAcademyPlay from './components/apps/piano-academy/components/PianoAcademyPlay';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/store" element={<StorePlay />} />
           <Route path="/hotel" element={<HotelPlay />} />
           <Route path="/academy" element={<AcademyPlay />} />
+          <Route path="/piano-academy" element={<PianoAcademyPlay />} />
         </Route>
       </Routes>
     </Router>

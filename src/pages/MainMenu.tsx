@@ -28,6 +28,9 @@ const MainMenu = () => {
         <Link to="/academy">
           <button style={{ padding: '10px 20px' }}>학원 놀이</button>
         </Link>
+        <Link to="/piano-academy">
+          <button style={{ padding: '10px 20px' }}>피아노 학원 놀이</button>
+        </Link>
       </div>
     </div>
   );

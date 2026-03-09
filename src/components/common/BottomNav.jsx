@@ -19,6 +19,11 @@ const BottomNav = ({ activeMode, activeItem, onMenuClick }) => {
       { id: 'attendance', icon: '📋', label: '출석부' },
       { id: 'progress', icon: '📒', label: '칭찬 스티커' },
     ],
+    'piano-academy': [
+      { id: 'practice', icon: '🎹', label: '연습실' },
+      { id: 'theory', icon: '📝', label: '이론 수업' },
+      { id: 'recital', icon: '🏆', label: '연주회' },
+    ],
   };
 
   const currentMenus = menus[activeMode] || [];

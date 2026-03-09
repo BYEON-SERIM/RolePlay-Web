@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import { academyStore } from '../../../../store/academyStore';
 
+import yesSound from '../../../../assets/sounds/Yes.mp3';
+import noSound from '../../../../assets/sounds/No.mp3';
+
 const MATH_QUIZZES = [
   { question: '1 + 1 = ?', options: ['1', '2', '3', '4'], answer: '2' },
   { question: '2 + 3 = ?', options: ['4', '5', '6', '7'], answer: '5' },
@@ -87,6 +90,7 @@ const Classroom = () => {
 
     const currentQuiz = quizzes[currentQuizIndex];
     if (option === currentQuiz.answer) {
+      new Audio(yesSound).play();
       setIsCorrect(true);
       setMessage('정답입니다! ⭕');
       academyStore.addSticker();
@@ -109,6 +113,7 @@ const Classroom = () => {
         }
       }, 1000);
     } else {
+      new Audio(noSound).play();
       setIsCorrect(false);
       setMessage('땡! 다시 생각해보세요 ❌');
     }

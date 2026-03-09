@@ -10,6 +10,8 @@ const getTitle = (pathname: string): string => {
       return '호텔 놀이';
     case '/academy':
       return '학원 놀이';
+    case '/piano-academy':
+      return '🎹 피아노 학원 놀이';
     default:
       return '🎀하윤이의 역할놀이🎀';
   }
